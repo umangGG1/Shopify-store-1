@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "140336341e0d42c8bdeb07a299cedce4"
+name = "umang-store"
+handle = "umang-store-1"
+application_url = "https://share-households-ah-carbon.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-2136992d.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://share-households-ah-carbon.trycloudflare.com/auth/callback",
+  "https://share-households-ah-carbon.trycloudflare.com/auth/shopify/callback",
+  "https://share-households-ah-carbon.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
